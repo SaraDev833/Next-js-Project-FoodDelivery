@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Signin from "../_Components/Signin"
 import Signup from "../_Components/Signup"
+import Link from "next/link"
 
 function Authentication() {
     const [authenticated, setAuthenticated] = useState(true)
@@ -10,8 +11,7 @@ function Authentication() {
      }
     return (
         <div>
-            {authenticated ?  <Signin changeState = {changeState}/> :  <Signup changeState= {changeState}/>}
-           
+            <Signup/>
            
         </div>
     )
